@@ -13,7 +13,7 @@ Installation
 describe-variable user-init-file
 ```
    This will show you where Emacs expects to find your configuration file.
-3.. Open the file in Emacs (or create it if it doesn't exist)
+3. Open the file in Emacs (or create it if it doesn't exist)
 4. If the file exists, you can back it up...
 5. Edit the file's contents as shown below and replace *$MYEMACS* with
 the location given above for your git checkout of this repo:
@@ -24,7 +24,7 @@ the location given above for your git checkout of this repo:
 6. Save the file
 7. Exit and restart emacs
 8. You should see a message saying *".emacs loaded successfully."*
-(you can check the **\*Messages\*** buffer for this message if you
+(you can check the **<i>\*Messages\*</i>** buffer for this message if you
 miss it in the mini-buffer). If you see any errors, you should
 investigate and also make sure that the paths above in your `.emacs` are
 correct.
