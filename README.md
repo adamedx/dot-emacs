@@ -6,24 +6,24 @@ This is my raw Emacs configuration.
 Installation
 ------------
 
-1. Clone this repository somewhere under your user profile -- we'll refer to this director as *$MYEMACS* below
-2. If you're not sure where your Emacs configuration file exists, you
+ 1. Clone this repository somewhere under your user profile -- we'll refer to this director as *$MYEMACS* below
+ 2. If you're not sure where your Emacs configuration file exists, you
    can find out with the command below executed in Emacs with `M-x`:
 ```
 describe-variable user-init-file
 ```
    This will show you where Emacs expects to find your configuration file.
-3. Open the file in Emacs (or create it if it doesn't exist)
-4. If the file exists, you can back it up...
-5. Edit the file's contents as shown below and replace *$MYEMACS* with
+ 3. Open the file in Emacs (or create it if it doesn't exist)
+ 4. If the file exists, you can back it up...
+ 5. Edit the file's contents as shown below and replace *$MYEMACS* with
 the location given above for your git checkout of this repo:
 ```lisp
    (add-to-list 'load-path "$MYEMACS/.emacs-autoload")
    (load-library "$MYEMACS/.emacs")
 ```
-6. Save the file
-7. Exit and restart emacs
-8. You should see a message saying *".emacs loaded successfully."*
+ 6. Save the file
+ 7. Exit and restart emacs
+ 8. You should see a message saying *".emacs loaded successfully."*
 (you can check the **<i>\*Messages\*</i>** buffer for this message if you
 miss it in the mini-buffer). If you see any errors, you should
 investigate and also make sure that the paths above in your `.emacs` are
