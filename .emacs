@@ -76,6 +76,7 @@
 ;; Modes
 
 (load-library "powershell")
+(load-library "csharp-mode")
 
 ;; Markdown
 (autoload 'markdown-mode "markdown-mode"
