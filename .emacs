@@ -105,58 +105,6 @@
 ;; Font height is 1/10th, so 140 is 14pt
 (set-face-attribute 'default nil :height 140)
 
-;; Setup font-lock syntax coloring package
-;; (defconst lconfig-font-lock-faces
-;; (list '(font-lock-builtin-face
-;;        ((((class color) (background dark)) (:foreground "cyan" :bold t))
-;;         (((class color)) (:foreground "DarkBlue" :bold t))))
-;;      '(font-lock-comment-face
-;;        ((((class color) (background dark)) (:foreground "LightPink"))
-;;         (((class color)) (:foreground "FireBrick"))))
-;;      '(font-lock-constant-face
-;;        ((((class color) (background dark)) (:foreground "SpringGreen"))
-;;         (((class color)) (:foreground "ForestGreen"))))
-;;      '(font-lock-doc-string-face
-;;        ((((class color) (background dark)) (:foreground "SpringGreen"))
-;;         (((class color)) (:foreground "ForestGreen"))))
-;;      '(font-lock-function-name-face
-;;        ((((class color) (background dark)) (:foreground "wheat3"))
-;;         (((class color)) (:foreground "DarkBlue"))))
-;;      '(font-lock-keyword-face
-;;        ((((class color) (background dark)) (:foreground "SkyBlue" :bold t))
-;;         (((class color)) (:foreground "DarkBlue" :bold t))))
-;;      '(font-lock-preprocessor-face
-;;        ((((class color) (background dark)) (:foreground "SkyBlue"))
-;;         (((class color)) (:foreground "gray40"))))
-;;      '(font-lock-reference-face
-;;        ((((class color) (background dark)) (:foreground "yellow"))
-;;         (((class color)) (:foreground "maroon4"))))
-;;      '(font-lock-string-face
-;;        ((((class color) (background dark)) (:foreground "SpringGreen"))
-;;         (((class color)) (:foreground "ForestGreen"))))
-;;      '(font-lock-type-face
-;;        ((((class color) (background dark)) (:foreground "orange1"))
-;;         (((class color)) (:foreground "maroon4"))))
-;;      '(font-lock-variable-name-face
-;;        ((((class color) (background dark)) (:foreground "yellow"))
-;;         (((class color)) (:foreground "SaddleBrown"))))
-;;      '(font-lock-warning-name-face
-;;        ((((class color) (background dark)) (:foreground "DarkOrange"))
-;;         (((class color)) (:foreground "DarkOrange"))))))
-
-;; ;; If possible set up a custom color scheme, otherwise turn colors off
-;; (autoload 'custom-set-faces "font-lock" "Set the color scheme" t)
-;; (autoload 'font-lock-fontify-buffer "font-lock" "Fontify Buffer" t)
-;; (condition-case err
-;;  (progn (apply 'custom-set-faces lconfig-font-lock-faces)
-;;         (add-hook 'c-mode-common-hook 'font-lock-fontify-buffer)
-;;         (add-hook 'emacs-lisp-mode-hook 'font-lock-fontify-buffer)
-;;         )
-;; (error (progn
-;;         (message "Could not customize colors, disabling colored fonts.")
-;;         (setq-default font-lock-auto-fontify t))))
-
-
 ;; Global key bindings
 
 (define-key global-map "\C-z" 'undo)
